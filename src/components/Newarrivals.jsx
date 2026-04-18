@@ -1,6 +1,6 @@
 // NewArrivals.jsx
 import React, { useState, useRef } from "react";
-import "../css/NewArrivals.css"
+import "../css/Newarrivals.css"
 
 const newArrivalImage = "https://discoverpilgrim.com/cdn/shop/files/1.1.WB.jpg?v=1773923714&width=1080";
 
