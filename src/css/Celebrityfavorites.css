@@ -1,0 +1,84 @@
+/* CelebrityFavorites.css */
+
+.celeb {
+  width: 100%;
+  padding: 32px 20px; /* smaller padding for mobile */
+  background: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.celeb__title {
+  text-align: center;
+  font-size: clamp(18px, 5vw, 30px); /* scales better */
+  font-weight: 700;
+  color: #1a6a7a;
+  margin-bottom: 20px;
+}
+
+/* GRID FIX */
+.celeb__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* CARD */
+.celeb__card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+}
+
+/* IMAGE FIX */
+.celeb__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* LABEL */
+.celeb__label {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+/* ------------------ */
+/* 📱 TABLET */
+@media (max-width: 900px) {
+  .celeb__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .celeb__img {
+    height: 260px;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+  .celeb {
+    padding: 24px 16px;
+  }
+
+  .celeb__grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 12px;
+  }
+
+  .celeb__img {
+    height: 240px;
+  }
+
+  .celeb__label {
+    font-size: 12px;
+  }
+}
